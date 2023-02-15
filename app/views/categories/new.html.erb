@@ -1,0 +1,27 @@
+<div class="form-section d-flex justify-content-center align-items-center mb-3">
+  <%= form_with model: @new_category, html: { class:'bs' }, url: categories_path do |f| %>
+    <div class='text-center bg-dark text-white'>
+      <h2 class='px-4 py-3 fs-3'>Add Category</h2>
+    </div>
+
+    <div class='px-4 pb-4'>
+      <div class="field mb-3">
+        <%= f.label :name, class:'form-label' %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", class:'form-control', required: true %>
+      </div>
+
+      <div class="field mb-3">
+        <%= f.label :icon, class:'form-label' %><br />
+        <%= f.text_field :icon, autocomplete: "icon", class:'form-control', required: true %>
+      </div>
+
+      <div class="actions d-grid mb-3">
+        <%= f.submit "Save", class: 'btn btn-outline-primary' %>
+      </div>
+
+      <div class="d-flex justify-content-center back-btn">
+        <%= link_to "< Back", "/categories", class:'text-center' %>
+      </div>
+    </div>
+  <% end %>
+</div>
