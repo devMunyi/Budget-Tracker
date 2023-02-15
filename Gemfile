@@ -48,8 +48,11 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# enforce use rails best practice/syntax
+# enforces use rails best practice/syntax
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+# handles authentication
+gem 'devise'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -57,6 +60,12 @@ group :development, :test do
 
   # handles db env variables loading
   gem 'dotenv-rails'
+
+  # handles rspec tests
+  gem 'rspec-rails', '~> 6.0.0'
+
+  # handles controllers/requests testing
+  gem 'rails-controller-testing'
 end
 
 group :development do
