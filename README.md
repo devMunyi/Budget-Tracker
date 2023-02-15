@@ -62,7 +62,6 @@
 - **[authentication system to allow login and registration]**
 - **[list categories of items you spend on]**
 - **[list transactions for a specific category]**
-- **[allow you user to login ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
