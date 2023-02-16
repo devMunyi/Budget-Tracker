@@ -1,0 +1,28 @@
+<%= render 'shared/nav', title: 'BudgetTracker' %>
+
+</div class="container">
+  <%= render 'shared/notification_box' %>
+  <div class="form-section d-flex justify-content-center align-items-center mb-3">
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class:'bs' }) do |f| %>
+      <div class='text-center bg-dark text-white'>
+        <h2 class='px-4 py-3 fs-3'>Forgot your password?</h2>
+      </div>
+
+      <div class='px-4 pb-4'>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+        <div class="field mb-3">
+          <%= f.label :email, class: 'form-label' %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'form-control', required: true %>
+        </div>
+
+        <div class="actions d-grid mb-3">
+          <%= f.submit "Send me reset password instructions", class: 'btn btn-outline-primary' %>
+        </div>
+
+        <%= render "devise/shared/links" %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

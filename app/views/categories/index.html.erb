@@ -1,0 +1,46 @@
+<%= render 'shared/nav', title: 'Categories' %>
+
+<div class="container">
+  <%= render 'shared/notification_box' %>
+  <div class="mb-5">
+    <ul class='item'>
+      <% if @cats.empty? %>
+      <li><i class="text-center">No Categories available</i></li>
+      <% else %>
+      <% @cats.each_with_index do |cat, i| %>
+        <li class='category-item'>
+          <a href="/categories/<%= cat.id %>/expenses" class="card p-3 mb-3">
+            <div class="row">
+              <div class="col-4">
+                <%= (image_tag cat.icon_url, class: 'img-fluid') if cat.icon  %>
+              </div>
+
+              <div class="col-5">
+                <div class="text-muted text-bold d-flex flex-column gap-3 justify-content-center pt-4">
+                  <h3 class="category-name fs-4"><%= cat.name %></h3>
+                  <p class="date-created fs-4"><%= cat.format_date(cat.created_at) %></p>
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="text-bold text-black pt-4">
+                  <h3 class="fs-4"> <small><span class="text-muted">spent</span>: <%= "$" + cat.expenses.sum(:amount).to_s + "0"  %></small></h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      <% end %>
+      <% end %>
+    </ul>
+
+    <div class="d-grid">
+      <%= link_to new_category_path, class: "btn btn-outline-primary d-flex justify-content-center align-items-center" do %>
+        <svg class="svg-icon text-bold fs-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+        </svg>
+        <span class="text-bold fs-4">Add Category</span>
+      <% end %>
+    </div>
+  </div>
+</div>
