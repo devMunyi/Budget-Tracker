@@ -1,0 +1,8 @@
+name: budget-tracker
+language: ruby
+env: production
+build_command: bundle install --deployment
+start_command: bundle exec rails server -p $PORT
+routes:
+  - path: /
+    command: bundle exec rails server -p $PORT
