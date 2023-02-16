@@ -126,8 +126,6 @@ rails db:create db:migrate
 ### Usage
 
 To run the project, follow these instructions:
-
-- After Cloning this repo to your local machine.
 - To get it running on your machine, you may open the project on your IDE and open the terminal
 - On the terminal you can run:
 
