@@ -97,12 +97,12 @@ In order to run this project you need followed installed on your computer:
 Clone this repository to your desired folder or download the Zip folder:
 
 ```
-git clone https://github.com/devMunyi/Recipe-App
+git clone https://github.com/devMunyi/Budget-Tracker
 ```
 
 - Navigate to the location of the folder in your machine:
 
-**`you@your-Pc-name:~$ cd Recipe-App`**
+**`you@your-Pc-name:~$ cd Budget-Tracker`**
 
 ### Install
 
