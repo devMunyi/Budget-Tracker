@@ -57,18 +57,18 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # handles authentication
 gem 'devise'
 
+# handles db env variables loading
+gem 'dotenv-rails'
+
+# handles rspec tests
+gem 'rspec-rails', '~> 6.0.0'
+
+# handles controllers/requests testing
+gem 'rails-controller-testing'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-
-  # handles db env variables loading
-  gem 'dotenv-rails'
-
-  # handles rspec tests
-  gem 'rspec-rails', '~> 6.0.0'
-
-  # handles controllers/requests testing
-  gem 'rails-controller-testing'
 end
 
 group :development do
