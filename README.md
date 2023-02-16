@@ -132,7 +132,6 @@ To run the project, follow these instructions:
 ```
 rails s OR rails server
 ```
-- After, you can follow along the app and run the appropriate option from navsigations to interact with it.
 
 ### Run tests
 
