@@ -66,7 +66,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Project Presentation <a name="project-presentation"></a>
-- [Video]()
+- [Video](https://www.loom.com/share/2b85199bd38f4a72a190b82c99fd5d52)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,18 +111,28 @@ To install all dependencies, run:
 ```
 bundle install
 ```
+### Database Setup
+- Create .env file and add database credentials(be sure to replace with your details):
+```
+DB_HOST='localhost'
+DB_USERNAME='your_postgress_username'
+DB_PASSWORD='your_postgress_password'
+```
+- Then run the following command:
+```
+rails db:create db:migrate
+```
 
 ### Usage
 
 To run the project, follow these instructions:
-
-- After Cloning this repo to your local machine.
 - To get it running on your machine, you may open the project on your IDE and open the terminal
 - On the terminal you can run:
 
 ```
 rails s OR rails server
 ```
+- After, you can follow along the app and run the appropriate option from navsigations to interact with it.
 
 ### Run tests
 
