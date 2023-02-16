@@ -112,7 +112,9 @@ To install all dependencies, run:
 bundle install
 ```
 ### Database Setup
+
 - Create `.env` file and add the following three lines(be sure to replace with your details):
+
 ```
 DB_HOST='localhost'
 DB_USERNAME='your_postgress_username'
