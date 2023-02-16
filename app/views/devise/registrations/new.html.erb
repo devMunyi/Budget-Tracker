@@ -1,4 +1,8 @@
-<section>
+<%= render 'shared/nav', title: 'BudgetTracker' %>
+
+<div class="container">
+  <%= render 'shared/notification_box' %>
+  
   <div class='form-section d-flex justify-content-center align-items-center'>
     <%= form_for(resource, as: resource_name, html: { class: 'bs' }, url: registration_path(resource_name)) do |f| %>
       <div class='text-center bg-dark text-white'>
@@ -38,4 +42,4 @@
       </div>
     <% end %>
   </div>
-</section>
+</div>
