@@ -97,12 +97,12 @@ In order to run this project you need followed installed on your computer:
 Clone this repository to your desired folder or download the Zip folder:
 
 ```
-git clone https://github.com/devMunyi/Recipe-App
+git clone https://github.com/devMunyi/Budget-Tracker
 ```
 
 - Navigate to the location of the folder in your machine:
 
-**`you@your-Pc-name:~$ cd Recipe-App`**
+**`you@your-Pc-name:~$ cd Budget-Tracker`**
 
 ### Install
 
@@ -112,7 +112,9 @@ To install all dependencies, run:
 bundle install
 ```
 ### Database Setup
-- Create .env file and add database credentials(be sure to replace with your details):
+
+- Create `.env` file and add the following three lines(be sure to replace with your details):
+
 ```
 DB_HOST='localhost'
 DB_USERNAME='your_postgress_username'
@@ -132,7 +134,6 @@ To run the project, follow these instructions:
 ```
 rails s OR rails server
 ```
-- After, you can follow along the app and run the appropriate option from navsigations to interact with it.
 
 ### Run tests
 
