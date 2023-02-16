@@ -13,7 +13,6 @@ RSpec.describe 'expenses', type: :feature do
 
     @category = Category.create!(
       name: 'Food',
-      icon: 'https://media.tenor.com/erEq2OSqgKsAAAAM/mexican-cuisine-mexican-food.gif',
       author_id: @user.id
     )
 
@@ -34,10 +33,6 @@ RSpec.describe 'expenses', type: :feature do
 
     it 'shows correct heading' do
       expect(page).to have_content('Total')
-    end
-
-    it "shows the category's icon picture" do
-      expect(page).to have_css("img[src*='https://media.tenor.com/erEq2OSqgKsAAAAM/mexican-cuisine-mexican-food']")
     end
 
     it 'shows expense name' do

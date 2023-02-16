@@ -18,7 +18,6 @@ RSpec.describe ExpensesController, type: :request do
   let(:category) do
     Category.create(
       name: 'Food',
-      icon: 'https://media.tenor.com/erEq2OSqgKsAAAAM/mexican-cuisine-mexican-food.gif',
       author_id: user.id
     )
   end

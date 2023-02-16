@@ -13,7 +13,6 @@ RSpec.describe 'category', type: :feature do
 
     @category = Category.create!(
       name: 'Food',
-      icon: 'https://media.tenor.com/erEq2OSqgKsAAAAM/mexican-cuisine-mexican-food.gif',
       author_id: @user.id
     )
   end
@@ -23,10 +22,6 @@ RSpec.describe 'category', type: :feature do
 
     it 'shows category name' do
       expect(page).to have_content(@category.name)
-    end
-
-    it "shows the category's icon picture" do
-      expect(page).to have_css("img[src*='https://media.tenor.com/erEq2OSqgKsAAAAM/mexican-cuisine-mexican-food']")
     end
   end
 
