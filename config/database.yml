@@ -20,9 +20,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV['DB_HOST'] %>
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
+  # host: <%= ENV['DB_HOST'] %>
+  # username: <%= ENV['DB_USERNAME'] %>
+  # password: <%= ENV['DB_PASSWORD'] %>
 
 development:
   <<: *default
@@ -85,6 +85,6 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
-  database: Budget_Tracker_production
-  username: Budget_Tracker
-  password: <%= ENV["BUDGET_TRACKER_DATABASE_PASSWORD"] %>
+  # database: Budget_Tracker_production
+  # username: Budget_Tracker
+  # password: <%= ENV["BUDGET_TRACKER_DATABASE_PASSWORD"] %>
