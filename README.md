@@ -66,7 +66,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Project Presentation <a name="project-presentation"></a>
-- [Video]()
+- [Video](https://www.loom.com/share/2b85199bd38f4a72a190b82c99fd5d52)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
